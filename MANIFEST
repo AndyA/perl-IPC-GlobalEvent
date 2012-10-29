@@ -1,0 +1,11 @@
+bin/test.pl
+eventwait.c
+eventwait.h
+GlobalEvent.xs
+lib/IPC/GlobalEvent.pm
+Makefile.PL
+MANIFEST
+MYMETA.json
+MYMETA.yml
+README
+t/00-load.t
