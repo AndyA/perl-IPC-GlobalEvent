@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use base qw( DynaLoader Exporter );
 
-our @EXPORT_OK = qw( eventwait );
+our @EXPORT_OK = qw( eventsignal eventwait );
 
 =head1 NAME
 

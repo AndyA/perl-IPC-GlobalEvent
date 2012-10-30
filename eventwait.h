@@ -3,6 +3,7 @@
 #ifndef __EVENTWAIT_H
 #define __EVENTWAIT_H
 
+int eventsignal(const char *syncfile, unsigned long serial);
 int eventwait(const char *syncfile, unsigned long *serial, unsigned long timeout);
 
 #endif

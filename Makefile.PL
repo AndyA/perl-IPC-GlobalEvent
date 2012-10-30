@@ -3,9 +3,12 @@
 require 5.008001;
 
 use strict;
+
 use lib qw(inc);
+
 use ExtUtils::MakeMaker;
 use Devel::CheckLib;
+use Config;
 
 # Check that we have a C compiler
 check_lib_or_exit();
@@ -19,6 +22,7 @@ WriteMakefile(
   ABSTRACT_FROM => 'lib/IPC/GlobalEvent.pm',
   PL_FILES      => {},
   OBJECT        => 'GlobalEvent.o eventwait.o',
+  CCFLAGS       => "$Config{ccflags} -Wall",
   PREREQ_PM     => {
     'Test::More'         => 0,
     'List::Util'         => 0,
