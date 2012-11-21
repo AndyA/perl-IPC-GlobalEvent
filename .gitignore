@@ -6,8 +6,8 @@
 .lwpcookies
 .prove
 Build
-GlobalEvent.c
 IPC-GlobalEvent-*
+MYMETA.*
 Makefile
 Makefile.old
 Session.vim
